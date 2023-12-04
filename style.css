@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main{
+    height: 100vh;
+    width: 100%;
+    background-color: #9BB89C;
+}
+
+.panel{
+    height: 70%;
+    width: 80%;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.header{
+    height: 8vh;
+    width: 100%;
+    gap: 10vw;
+    background-color: #486748;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.target , .timer , .score {
+    gap: 1rem;
+}
+
+.target > p, .timer > p, .score > p{
+    font-size: 1.6rem;
+}
+
+.hit , .time , .runs{
+    padding: 0.6rem 1.3rem;
+    color: #4A664A;
+    font-weight: 600;
+    background-color: #fff;
+    border-radius: 0.5rem;
+}
+
+.body{
+    height: 60vh;
+    width: 100%;
+    background-color: #fff;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.bubble{
+    height: 4rem;
+    width: 4rem;
+    background-color: #4A664A;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border: none;
+}
+
+.bubble:hover{
+    background-color: rgb(50,75,50);
+}
+
+.gameover > h2{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #4A664A;
+}
+
+@media (max-width:1240px) {
+    html{
+        font-size: 56.25%;
+    }
+}
+
+@media (max-width:500px) {
+    html{
+        font-size: 50%;
+    }
+    .panel{
+        height: 100%;
+        width: 100%;
+    }
+}
